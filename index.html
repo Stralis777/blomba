@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>be1.ru</title>
+</head>
+<body>
+<p>&lt;!DOCTYPE html&gt;<br />
+&lt;html lang=&quot;en&quot;&gt;<br />
+&lt;head&gt;<br />
+&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;<br />
+&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br />
+&nbsp; &nbsp; &lt;title&gt;Тапалка&lt;/title&gt;<br />
+&nbsp; &nbsp; &lt;style&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; body {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: Arial, sans-serif;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: #f0f0f0;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; h1 {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #4CAF50;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; button {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 24px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 15px 30px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: #4CAF50;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: none;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 5px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; button:active {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: #45a049;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; .score {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 20px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 20px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &lt;/style&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&nbsp; &nbsp; &lt;h1&gt;Добро пожаловать в Тапалку!&lt;/h1&gt;<br />
+&nbsp; &nbsp; &lt;button id=&quot;tap-button&quot;&gt;Тапни!&lt;/button&gt;<br />
+&nbsp; &nbsp; &lt;div class=&quot;score&quot;&gt;Очки: &lt;span id=&quot;score&quot;&gt;0&lt;/span&gt;&lt;/div&gt;<br />
+&nbsp; &nbsp; &lt;script&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; let score = 0;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; const scoreElement = document.getElementById(&#39;score&#39;);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; const tapButton = document.getElementById(&#39;tap-button&#39;);</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; tapButton.addEventListener(&#39;click&#39;, () =&gt; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; score++;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scoreElement.textContent = score;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; });<br />
+&nbsp; &nbsp; &lt;/script&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
+&nbsp;</p>
+</body>
+</html>
